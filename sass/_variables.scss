@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+$orange: #ff5f01;
+$gold: #fdcd0b;
+$typo-color: #ffe7e1;
+
+@font-face {
+font-family: AnironBold;
+src: url("../assets/anirb___.ttf");
+}
+
+@font-face {
+font-family: Aniron;
+src: url("../assets/anirm___.ttf");
+}
+
+@mixin ring($size, $color, $shadow: 3px 3px 5px darken($color: $color, $amount: 10%)) {
+  background-color: transparent;
+  width: #{$size}px;
+  height: #{$size}px;
+  border: #{$size / 15}px solid $color;
+  border-radius: 50%;
+  box-shadow: $shadow;
+}
